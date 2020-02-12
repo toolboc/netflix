@@ -1,7 +1,7 @@
 # Build
 
-	docker build -t dgageot/netflix .
+	docker build -t toolboc/notflix .
 
 # Run
 
-	docker run -p 80:3128 -e USER=yourname -e PASSWORD=thepassword -d dgageot/netflix
+	docker run -p 3128:3128 -e USER=yourname -e PASSWORD=thepassword -d toolboc/notflix

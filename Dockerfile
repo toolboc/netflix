@@ -1,12 +1,8 @@
 # To run
-# docker run --rm -p 80:3128 -ti dgageot/netflix
-# docker run -p 80:3128 -d dgageot/netflix
+# docker run --rm -p 3128:3128 -ti toolboc/notflix
+# docker run -p 3128:3128 -d toolboc/notflix
 
-FROM google/debian:wheezy
-MAINTAINER David Gageot <david@gageot.net>
-
-ENV USER didier
-ENV PASSWORD thatsdockerpower!
+FROM debian:jessie
 
 # Install dependencies
 RUN apt-get update -qq
